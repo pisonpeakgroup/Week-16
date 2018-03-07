@@ -1,6 +1,6 @@
 // For  database.config.js in config folder
 module.exports = {
-  url: 'mongodb://<pisonpeak>:<musa08058702618>@ds253468.mlab.com:53468/week16'
+  url: 'mongodb://<username>:<**********>@ds253468.mlab.com:53468/week16'
 };
 {
     "_id"; "week16.pisonpeak",
