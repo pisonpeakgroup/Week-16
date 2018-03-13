@@ -11,9 +11,7 @@ class Routes {
    */
   static route(router) {
     authRoutes.route(router);
-    categoryRoutes.route(router);
-    topicRoutes.route(router);
-    userRoutes.route(router);
+    
   }
 }
 
