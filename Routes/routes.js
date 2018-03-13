@@ -1,7 +1,5 @@
 import authRoutes from './AuthRoutes';
-import userRoutes from './UserRoutes';
-import categoryRoutes from './CategoryRoutes';
-import topicRoutes from './TopicRoutes';
+
 
 /**
  * Holds all routing logic
