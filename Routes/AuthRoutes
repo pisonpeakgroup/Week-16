@@ -1,5 +1,4 @@
 import authRoutes from './AuthRoutes';
-import userRoutes from './UserRoutes';
 
 /**
  * Holds all routing logic
@@ -11,9 +10,7 @@ class Routes {
    */
   static route(router) {
     authRoutes.route(router);
-    categoryRoutes.route(router);
-    topicRoutes.route(router);
-    userRoutes.route(router);
+    
   }
 }
 
