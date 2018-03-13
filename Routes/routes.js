@@ -1,14 +1,22 @@
-const books = require('./../controllers/schooldata');
+import authRoutes from './AuthRoutes';
+import userRoutes from './UserRoutes';
+import categoryRoutes from './CategoryRoutes';
+import topicRoutes from './TopicRoutes';
 
-const routes = function(router) {
-    router.route('/schooldata')
-        .post(books.create)
-        .get(books.getAll);
+/**
+ * Holds all routing logic
+ */
+class Routes {
+  /**
+   * Route handling method
+   * @param {Object} router
+   */
+  static route(router) {
+    authRoutes.route(router);
+    categoryRoutes.route(router);
+    topicRoutes.route(router);
+    userRoutes.route(router);
+  }
+}
 
-    router.route('/schooldata/:bookId')
-        .put(books.update)
-        .get(books.getOne)
-        .delete(books.delete);
-};
-
-module.exports = routes;
+export default Routes;
